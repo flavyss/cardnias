@@ -1,0 +1,87 @@
+/* reset básico da pagina */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+    background-color: #F7F7F8;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* header do site */
+
+header{
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* faixa */
+
+.faixa{
+    width: 100%;
+    padding: 12px;
+    background-image: linear-gradient(to right,#17161A,#999999);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.faixaP{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(255, 255, 74) 0px, rgb(252, 208, 0) 4%, rgb(255, 193, 18) 8%, rgb(255, 193, 18) 11%, rgb(255, 138, 0) 16%, rgb(255, 95, 95) 22%, rgb(255, 37, 58) 28%, rgb(255, 55, 168) 37%, rgb(199, 57, 255) 49%, rgb(164, 0, 225) 56%, rgb(46, 206, 255) 72%, rgb(0, 134, 255) 80%, rgb(114, 247, 114) 94%, rgb(0, 214, 4));
+}
+
+/* cards */
+
+section.cards{
+    padding: 30px 0;
+}
+
+section.cards .contentCards{
+    width: 100%;
+    display: flex;
+}
+
+section.cards .contentCards .cardWraper{
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+section.cards .contentCards .cardWraper .cardSingle{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 96px -38px black;
+}
+
+footer{
+    width: 100%;
+}
+
+footer hr{
+    border-color: #fff;
+    width: 100%;
+    margin:60px 0 20px 0;
+    height: 0.5px;
+}
+
+footer > .container{
+    text-align: center;
+}
+
+footer .cardsform{
+    margin: 20px 0;
+}
