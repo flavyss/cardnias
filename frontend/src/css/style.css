@@ -9,6 +9,7 @@ html,
 body{
     height: 100%;
     background-color: #F7F7F8;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -64,7 +65,22 @@ section.cards .contentCards .cardWraper .cardSingle{
     padding: 10px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 0 96px -38px black;
+    box-shadow: 8px 0 44px -38px black;
+}
+
+section.cards .contentCards .cardWraper .cardSingle p{
+    font-size: 13px;
+}
+
+
+section.cards .contentCards .cardWraper .cardSingle input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 555px;
+    border: none;
+    background-color: #f4f6f8;
+    color: #333;
+    outline: none;
 }
 
 footer{

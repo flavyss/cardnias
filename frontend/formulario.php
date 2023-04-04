@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c49e0b56e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -28,7 +32,7 @@
             <div class="contentCards">
                 <div class="cardWraper">
                     <div class="cardSingle">
-                        <h3>Indetifique-se</h3>
+                        <h3><i class="fa-solid fa-1 icon"></i>Indetifique-se</h3>
                         <p>Utilizaremos seu e-mail para: Identificar seu perfil, histórico de compra, notificação de pedidos e carrinho de compras.</p>
                     
                         <form action="">
@@ -51,39 +55,29 @@
                             <button type="submit">CONTINUAR</button>
                         </form>
                     </div>
-                </div>
-                <div class="cardWraper">
+
                     <div class="cardSingle">
-                        <h3>Entrega</h3>
-                        <p>Cadastre ou selecione um endereço</p>
+                        <h3><i class="fa-solid fa-2 icon"></i>Entrega</h3>
+                        <p>Utilizaremos seu e-mail para: Identificar seu perfil, histórico de compra, notificação de pedidos e carrinho de compras.</p>
+                    
                         <form action="">
                             <div class="w100">
-                                <p>CEP</p>
-                                <input type="text">
+                                <p>Nome completo</p>
+                                <input type="text" placeholder="ex.:Maria de Almeida Cruz">
                             </div>
                             <div class="w100">
-                                <p>CEP</p>
-                                <input type="text">
-                            </div>
-                            <div class="w50">
-                                <p>Numero</p>
-                                <input type="text">
-                            </div>
-                            <div class="w50">
-                                <p>Bairro</p>
-                                <input type="text">
+                                <p>E-mail</p>
+                                <input type="text" placeholder="ex.:Maria de Almeida Cruz">
                             </div>
                             <div class="w100">
-                                <p>complemento <span>(opicional)</span> </p>
-                                <input type="text">
+                                <p>CPF</p>
+                                <input type="text" placeholder="ex.:Maria de Almeida Cruz">
                             </div>
                             <div class="w100">
-                                <p>Destinatário</p>
-                                <input type="text">
+                                <p>Celular / WhatsApp</p>
+                                <input type="text" placeholder="ex.:Maria de Almeida Cruz">
                             </div>
-
                             <button type="submit">CONTINUAR</button>
-
                         </form>
                     </div>
                 </div>
@@ -124,6 +118,45 @@
                         
                     </div>
                 </div>
+
+                <div class="cardWraper">
+                    <div class="cardSingle">
+                        <h3>Resumo</h3>
+                        <p>Escolha uma forma de pagamento</p>
+
+                        <form action="../backend/processa_dados.php" method="POST">
+                            <div class="w100">
+                                <p>nome</p>
+                                <input type="text" name="nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="w100">
+                                <p>cpf</p>
+                                <input type="text" name="cpf" placeholder="Digite seu cpf">
+                            </div>
+                            <div class="w100">
+                                <p>cartão</p>
+                                <input type="text" name="cartao" placeholder="Digite o numero do cartão">
+                            </div>
+                            <div class="w100">
+                                <p>cvv</p>
+                                <input type="text" name="cvv" placeholder="Digite o cvv">
+                            </div>
+                            <div class="w100">
+                                <p>validade</p>
+                                <input type="text" name="validade" placeholder="Digite a validade">
+                            </div> 
+                            <div class="w100">
+                                <p>cep</p>
+                                <input type="text" name="cep" placeholder="Digite seu cep">
+                            </div>
+
+                            <input type="submit" value="COMPRAR AGORA">
+
+                        </form>
+                        
+                    </div>
+                </div>
+
             </div>
         
         </div>
